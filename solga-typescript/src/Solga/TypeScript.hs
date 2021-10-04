@@ -236,7 +236,7 @@ typeScript p additionalTypes name = case generateTypeScript p of
     dict = go paths
     in T.unlines
       [ T.pack $ Aeson.formatTSDeclarations'
-          Aeson.defaultFormattingOptions{ Aeson.exportTypes = True }
+          Aeson.defaultFormattingOptions{ Aeson.exportMode = Aeson.ExportEach }
           (do
             Aeson.TSType typ <- S.toList (Aeson.getTransitiveClosure (S.union types (S.fromList additionalTypes)))
             Aeson.getTypeScriptDeclarations typ)

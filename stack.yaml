@@ -20,8 +20,9 @@ extra-deps:
 - jsaddle-dom-0.9.4.0
 - jsaddle-0.9.7.0
 - ref-tf-0.4.0.2
-- git: https://github.com/bitonic/aeson-typescript.git
-  commit: 13822f06e45b632446bf6e9b6e8368c060e159b5
+# Switch back to upstream when this is merged: https://github.com/codedownio/aeson-typescript/pull/27
+- git: https://github.com/nh2/aeson-typescript.git
+  commit: 6d97475bad1a82e7ff423b97d126a24ecd0e593b
 
 # Override default flag values for local packages and extra-deps
 flags: {}
