@@ -1,7 +1,7 @@
 # For more information, see: https://github.com/commercialhaskell/stack/blob/release/doc/yaml_configuration.md
 
 # Specifies the GHC version and set of packages available (e.g., lts-3.5, nightly-2015-09-21, ghc-7.10.2)
-resolver: lts-14.22
+resolver: lts-18.12
 
 # Local packages, usually specified by relative directory name
 packages:
@@ -17,9 +17,9 @@ packages:
 extra-deps:
 - ghcjs-dom-0.9.4.0
 - ghcjs-dom-jsaddle-0.9.4.0
-- jsaddle-dom-0.9.4.0
-- jsaddle-0.9.7.0
-- ref-tf-0.4.0.2
+- jsaddle-dom-0.9.4.1
+- jsaddle-0.9.8.0
+- ref-tf-0.4.0.2@sha256:69de3550250e0cd69f45d080359cb314a9487c915024349c75b78732bbee9332,1134
 # Switch back to upstream when this is merged: https://github.com/codedownio/aeson-typescript/pull/27
 - git: https://github.com/nh2/aeson-typescript.git
   commit: 6d97475bad1a82e7ff423b97d126a24ecd0e593b
